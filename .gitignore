@@ -1,0 +1,37 @@
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Experiment artifacts written by the notebooks in this repo ---
+# (the shipped loss logs 10.txt / 10b.txt / 10c.txt are evidence and are
+#  intentionally NOT ignored -- do not add them here)
+*.pk
+*.pt
+*.pth
+*.npy
+*.npz
+*.ckpt
+
+# --- Training data ---
+# Not part of this repo. The notebooks read ../dat/py/all.90 relative to the
+# working directory; if a copy is ever placed here, never commit it.
+/dat/
+*.90
+*.B
+*.U
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
