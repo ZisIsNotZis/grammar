@@ -30,7 +30,8 @@ env/
 *.B
 *.U
 
-# --- OS / editor ---
+# --- Local agent state, OS / editor ---
+.pi/
 .DS_Store
 Thumbs.db
 .idea/
